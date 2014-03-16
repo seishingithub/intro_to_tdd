@@ -1,13 +1,11 @@
 =begin
-The class is not initialized with anything special.
-add method takes two numbers, returns their sum.
 subtract method takes two numbers. returns their diff.
 save method allows you to save a number to the calculator's memory.
       The number can be retrieved using the get method.
 clear method clears the calculator's memory. When the memory is empty, get returns 0.
 When a calculator is initialized, the memory value is 0.
 =end
-require 'numeric_calc'
+require 'calc_master'
 
 describe CalcMaster do
   it "adds two numbers" do
@@ -17,7 +15,15 @@ describe CalcMaster do
     expected = 3
 
     expect(expected).to eq actual
+  end
 
+  it "subtracts by taking 2 numbers and returning their difference" do
+    calc_mini = CalcMaster.new
+
+    actual = calc_mini.subtract(2,1)
+    expected = 1
+
+    expect(expected).to eq actual
   end
 
 

@@ -7,6 +7,9 @@ class CalcMaster
     num1 + num2
   end
 
+  def subtract(num2, num1)
+    num2 - num1
+  end
 
 
 end
