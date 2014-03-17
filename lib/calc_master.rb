@@ -11,9 +11,11 @@ class CalcMaster
     num2 - num1
   end
 
-  def save (mem)
+  def save(mem)
     @mem = mem
   end
 
-
+  def retrieve(mem)
+    @mem = mem
+  end
 end

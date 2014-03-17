@@ -33,6 +33,14 @@ describe CalcMaster do
 
     expect(expected).to eq actual
   end
+  it "retrieves a number from the calculator's memory" do
+    calc_mini = CalcMaster.new
 
+    actual = calc_mini.retrieve(1)
+    expected = 1
+
+    expect(expected).to eq actual
+
+  end
 
 end
