@@ -1,6 +1,6 @@
 class CalcMaster
   def initialize
-
+    @mem = 0
   end
 
   def add(num1, num2)
@@ -17,5 +17,9 @@ class CalcMaster
 
   def retrieve(mem)
     @mem = mem
+  end
+
+  def clear
+    @mem = 0
   end
 end

@@ -1,5 +1,4 @@
 =begin
-      The number can be retrieved using the get method.
 clear method clears the calculator's memory. When the memory is empty, get returns 0.
 When a calculator is initialized, the memory value is 0.
 =end
@@ -40,7 +39,14 @@ describe CalcMaster do
     expected = 1
 
     expect(expected).to eq actual
+  end
+  it "clears the calculator's memory. When empty, get return 0" do
+    calc_mini = CalcMaster.new
 
+    actual = calc_mini.clear
+    expected = 0
+
+    expect(expected).to eq actual
   end
 
 end
