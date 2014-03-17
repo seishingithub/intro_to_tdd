@@ -1,6 +1,4 @@
 =begin
-subtract method takes two numbers. returns their diff.
-save method allows you to save a number to the calculator's memory.
       The number can be retrieved using the get method.
 clear method clears the calculator's memory. When the memory is empty, get returns 0.
 When a calculator is initialized, the memory value is 0.
@@ -27,8 +25,14 @@ describe CalcMaster do
   end
 
 
+  it "allows you to save a number to the calculator's memory" do
+    calc_mini = CalcMaster.new
 
+    actual = calc_mini.save(1)
+    expected = 1
 
+    expect(expected).to eq actual
+  end
 
 
 end

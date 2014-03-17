@@ -11,5 +11,9 @@ class CalcMaster
     num2 - num1
   end
 
+  def save (mem)
+    @mem = mem
+  end
+
 
 end
