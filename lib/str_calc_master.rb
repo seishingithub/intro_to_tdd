@@ -1,7 +1,18 @@
 class StringCalcMaster
-  def add(str)
-    str.to_i
+  def initialize (delimeter = ",")
+    @delimeter = delimeter
   end
 
+  def add(str)
+    sum = 0
+    array = str.split(",")
+    array.each do |x|
+      sum += x.to_i
+    end
+    sum
+    # str.to_i
+
+
+  end
 end
 
